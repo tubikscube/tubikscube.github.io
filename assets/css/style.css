@@ -1330,3 +1330,11 @@ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.012em; }
 
 /* CV page while no CV file is hosted here: message inside the same frame */
 .cv-pages .cv-fallback { min-height: min(52vh, 480px); background: var(--paper); border-radius: 2px; }
+
+/* About on phones and tablets: portrait on the left, degrees stacked beside it */
+@media (max-width: 860px) {
+  .about-rail { display: grid; grid-template-columns: 116px minmax(0, 1fr); column-gap: var(--s-5); align-items: start; }
+  .about-rail .about-cue { grid-column: 1 / -1; }
+  .about-rail .portrait-education { display: block; margin-top: var(--s-4); }
+  .about-rail .portrait-education > div + div { margin-top: var(--s-3); }
+}
