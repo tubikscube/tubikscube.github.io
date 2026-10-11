@@ -1361,3 +1361,11 @@ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.012em; }
 .rule-list.compact .what { color: var(--ink); }
 .rule-list.compact .where { color: var(--ink-faint); }
 @media (max-width: 860px) { .rule-list.compact li { grid-template-columns: 1fr; gap: 2px; } }
+
+
+/* Vertical rhythm, tightened one step: sections with only two or three entries were floating in space */
+.section { padding-block: clamp(2.25rem, 3.6vw, 3.25rem); }
+.entry { padding-block: var(--s-5); }
+
+/* Venue lines (journals, conferences, institutions): near-ink and medium weight, because the thin italic read as too pale */
+.entry .venue { color: color-mix(in srgb, var(--ink) 96%, var(--paper)); font-weight: 500; }
