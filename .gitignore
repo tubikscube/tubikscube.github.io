@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.DS_Store
+
+# Internal working notes: kept on this computer, not published
+DESIGN.md
+*.bak
