@@ -1340,3 +1340,24 @@ h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.012em; }
 }
 
 .section.lectures-section { background: var(--paper); }
+
+
+/* Entry titles: quieter, closer to the italic venue line beneath them */
+.entry h2, .entry h3 { font-size: clamp(1.3rem, 0.45vw + 1.2rem, 1.55rem); line-height: 1.22; margin-bottom: 0.25rem; }
+.entry .venue { font-size: 1.15rem; }
+
+/* Compact lists inside a section (guest lectures, teaching assistant roles) */
+.sub-label {
+  margin: var(--s-7) 0 var(--s-3);
+  font-family: var(--font-sans);
+  font-size: var(--t-label);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.rule-list.compact { font-size: var(--t--1); }
+.rule-list.compact li { grid-template-columns: 13rem minmax(0, 1fr); padding: var(--s-3) 0; }
+.rule-list.compact .what { color: var(--ink); }
+.rule-list.compact .where { color: var(--ink-faint); }
+@media (max-width: 860px) { .rule-list.compact li { grid-template-columns: 1fr; gap: 2px; } }
